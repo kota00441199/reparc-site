@@ -1,0 +1,87 @@
+/* アプリ(src/theme/colors.ts)と同じ配色。アプリはダークテーマ固定なので、ページもダークで揃える。 */
+:root {
+  --bg: #0B0F0D;
+  --surface: #151A18;
+  --border: #262C29;
+  --primary: #2EE6A8;
+  --text: #FFFFFF;
+  --text-secondary: #9AA3A0;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 20px;
+}
+.brand img { width: 44px; height: 44px; border-radius: 10px; }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+nav .links { display: flex; gap: 16px; font-size: 14px; }
+
+a { color: var(--primary); }
+
+h1 { font-size: 26px; line-height: 1.4; margin: 0 0 4px; }
+h2 { font-size: 19px; margin: 32px 0 8px; padding-left: 10px; border-left: 4px solid var(--primary); }
+p { margin: 0 0 12px; }
+ul { margin: 0 0 12px; padding-left: 22px; }
+li { margin-bottom: 4px; }
+strong { color: var(--text); }
+
+.meta { color: var(--text-secondary); font-size: 14px; margin-bottom: 24px; }
+
+.table-wrap { overflow-x: auto; margin: 4px 0 16px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { border: 1px solid var(--border); padding: 6px 10px; text-align: left; vertical-align: top; }
+th { background: var(--surface); color: var(--text-secondary); white-space: nowrap; }
+
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px; margin: 12px 0; }
+
+.hero { text-align: center; padding: 24px 0 8px; }
+.hero img { width: 112px; height: 112px; border-radius: 24px; }
+.hero h1 { margin-top: 12px; }
+
+.link-list { list-style: none; padding: 0; display: grid; gap: 10px; max-width: 420px; margin: 24px auto; }
+.link-list a {
+  display: block;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+.link-list a::after { content: "›"; float: right; color: var(--text-secondary); }
+
+footer { margin-top: 48px; color: var(--text-secondary); font-size: 13px; text-align: center; }
