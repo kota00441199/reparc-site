@@ -157,7 +157,39 @@
 }
 .showcase h3 { font-size: 20px; margin: 0 0 10px; }
 .showcase p { color: var(--text-secondary); font-size: 15px; }
-.showcase-image { width: 100%; border-radius: 14px; border: 1px solid var(--border); }
+.showcase-image { width: 100%; border-radius: 14px; }
+/* 画像を左に置く段。スマホの幅では文章を先に出す */
+.showcase.reverse { grid-template-columns: 1fr 1fr; }
+.showcase .showcase-image { max-width: 440px; justify-self: center; }
+
+/* アプリの画面の一部を切り出した画像 */
+.shot {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  justify-self: center;
+  border-radius: 22px;
+}
+
+/* 画像はすべて、最初の画面のスマホと同じようにミント色に光らせる */
+.phone,
+.shot,
+.showcase-image {
+  border: 1px solid rgba(46, 230, 168, 0.45);
+  box-shadow:
+    0 0 24px rgba(46, 230, 168, 0.35),
+    0 0 90px rgba(46, 230, 168, 0.28),
+    0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.pro-shots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 0 0 20px;
+}
+.pro-shots figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.pro-shots figcaption { color: var(--text-secondary); font-size: 14px; font-weight: 600; text-align: center; }
 
 /* Pro */
 .pro-badge {
@@ -212,7 +244,9 @@
   .hero-lp { grid-template-columns: 1fr; gap: 32px; padding-top: 36px; }
   .hero-text { text-align: left; }
   .phone { width: min(260px, 80%); }
-  .showcase { grid-template-columns: 1fr; padding: 18px; }
+  .showcase, .showcase.reverse { grid-template-columns: 1fr; padding: 18px; }
+  .showcase.reverse .showcase-image { order: 2; }
+  .pro-shots { grid-template-columns: 1fr; }
   .lp-nav .links { gap: 14px; }
   .lp-main { padding: 0 16px 32px; }
   .grid, .grid.two { grid-template-columns: 1fr; }
