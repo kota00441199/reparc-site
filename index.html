@@ -3,22 +3,164 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RepArc</title>
+<title>RepArc｜パワーリフターのためのトレーニング記録アプリ</title>
+<meta name="description" content="セットの記録、BIG3の自己ベスト、DOTS・IPF GLポイント、試合の試技まで。パワーリフティングに必要な記録と計算をひとつにまとめた iPhone アプリです。">
+<meta property="og:title" content="RepArc｜パワーリフターのためのトレーニング記録アプリ">
+<meta property="og:description" content="練習から試合まで、BIG3のすべてを記録する。">
+<meta property="og:image" content="https://kota00441199.github.io/reparc-site/icon.png">
+<meta property="og:type" content="website">
 <link rel="icon" href="favicon.png">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="lp.css">
 </head>
-<body>
-<main>
-<div class="hero">
-<img src="icon.png" alt="RepArc のアイコン">
-<h1>RepArc</h1>
-<p class="meta">BIG3と自己ベストをシンプルに記録する、筋トレ記録アプリ</p>
-</div>
-<ul class="link-list">
-<li><a href="support/">サポート・お問い合わせ</a></li>
-<li><a href="privacy/">プライバシーポリシー</a></li>
-</ul>
-<footer>© 2026 中山弘太</footer>
+<body class="lp">
+
+<header class="lp-nav">
+  <a class="brand" href="./"><img src="icon.png" alt="">RepArc</a>
+  <nav class="links">
+    <a href="#features">機能</a>
+    <a href="#pro">Pro</a>
+    <a href="support/">サポート</a>
+  </nav>
+</header>
+
+<main class="lp-main">
+
+  <section class="hero-lp">
+    <div class="hero-text">
+      <p class="eyebrow">パワーリフターのためのトレーニング記録アプリ</p>
+      <h1><span class="phrase">練習から試合まで、</span><span class="phrase">BIG3のすべてを</span><span class="phrase">記録する。</span></h1>
+      <p class="lead">セットの記録、自己ベスト、DOTS・IPF GLポイント、試合の試技まで。パワーリフティングに必要な記録と計算を、ひとつのアプリにまとめました。</p>
+      <div class="cta">
+        <span class="store-button" aria-disabled="true">App Store で近日公開</span>
+        <p class="cta-note">iPhone 向け ・ 基本の機能は無料</p>
+      </div>
+    </div>
+    <div class="phone">
+      <img src="images/screen-home.png" alt="RepArc のホーム画面。ワークアウトの開始ボタンと、次のイベントが並んでいる">
+    </div>
+  </section>
+
+  <section class="big3-strip" aria-label="BIG3">
+    <div><img src="images/squat.png" alt=""><span>スクワット</span></div>
+    <div><img src="images/bench.png" alt=""><span>ベンチプレス</span></div>
+    <div><img src="images/deadlift.png" alt=""><span>デッドリフト</span></div>
+  </section>
+
+  <section id="features" class="block">
+    <h2 class="block-title"><span class="phrase">毎日の練習を、</span><span class="phrase">迷わず記録</span></h2>
+    <div class="grid two">
+      <article class="feature">
+        <h3>セットをすばやく記録</h3>
+        <p>重量・回数・RPEと、成功・失敗をタップで記録。前回の重量を自動で入れるので、セットの合間に手間がかかりません。</p>
+      </article>
+      <article class="feature">
+        <h3>自己ベストとBIG3合計</h3>
+        <p>成功したセットから、種目ごとの自己ベストとBIG3の合計を自動で更新します。</p>
+      </article>
+      <article class="feature">
+        <h3>推定1RMのグラフ</h3>
+        <p>種目ごとの重量と推定1RMの推移をグラフで確認。伸びている時期と止まっている時期がひと目で分かります。</p>
+      </article>
+      <article class="feature">
+        <h3>履歴とカレンダー</h3>
+        <p>いつ、何を、どれだけやったか。過去のワークアウトをカレンダーからすぐに振り返れます。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="block-title"><span class="phrase">パワーリフティングの計算は、</span><span class="phrase">アプリにおまかせ</span></h2>
+    <div class="grid">
+      <article class="feature">
+        <h3>DOTS・IPF GL ポイント</h3>
+        <p>トータルと体重から、DOTSとIPF GLポイントを自動で計算。クラシック・エクイップの両方に対応しています。</p>
+      </article>
+      <article class="feature">
+        <h3>階級の管理</h3>
+        <p>今の体重が階級の上限まであと何kgか、超えているかを表示。減量の目安になります。</p>
+      </article>
+      <article class="feature">
+        <h3>大会までのカウントダウン</h3>
+        <p>試合やMAX Dayの日を登録すると、ホームに残りの日数を表示します。</p>
+      </article>
+    </div>
+
+    <div class="showcase">
+      <div class="showcase-text">
+        <h3>プレート計算とウォームアップ</h3>
+        <p>目標の重量を入れるだけで、片側に付けるプレートを表示。ジムにないプレートや枚数の上限、試合用カラー（片側2.5kg）にも対応しています。</p>
+        <p>目標からウォームアップの重量と回数も自動で出すので、試合当日のアップにも使えます。</p>
+      </div>
+      <img class="showcase-image" src="images/plate-collar.png" alt="プレート計算の画面。バーに試合用カラーとプレートが付いた図">
+    </div>
+  </section>
+
+  <section id="pro" class="block pro-block">
+    <h2 class="block-title">さらに本気の人へ <span class="pro-badge">PRO</span></h2>
+    <p class="block-lead">試合に向けた準備をもっと細かく。Pro プランでは、次の機能が使えるようになります。</p>
+    <div class="grid">
+      <article class="feature pro">
+        <h3>試合モード</h3>
+        <p>第1〜第3試技を計画し、試合当日は成功・失敗をその場で記録。1RMの目安からおすすめの試技も出せます。結果はそのまま履歴とBIG3に反映されます。</p>
+      </article>
+      <article class="feature pro">
+        <h3>RPE計算機</h3>
+        <p>「3回を RPE8 でやるなら何kg？」をすぐに計算。早見表から、そのまま次のセットに入れられます。</p>
+      </article>
+      <article class="feature pro">
+        <h3>％で組めるルーティン</h3>
+        <p>「1RMの80% × 5回」のように組んでおけば、始めるときに今の1RMの目安からkgを計算します。</p>
+      </article>
+      <article class="feature pro">
+        <h3>ルーティンの保存</h3>
+        <p>よくやるメニューを保存して、ホームからすぐに開始できます。</p>
+      </article>
+      <article class="feature pro">
+        <h3>種目ごとのレスト時間</h3>
+        <p>BIG3は長め、補助種目は短めなど、種目ごとに休憩時間を決められます。</p>
+      </article>
+      <article class="feature pro">
+        <h3>画像でシェア</h3>
+        <p>ワークアウトの結果、BIG3合計、試合の結果、グラフを画像にして、SNSでシェアできます。</p>
+      </article>
+    </div>
+    <p class="note">Pro プランは準備中です。料金や開始時期は、公開時にお知らせします。</p>
+  </section>
+
+  <section class="block">
+    <h2 class="block-title">大切な記録を守る</h2>
+    <div class="grid">
+      <article class="feature">
+        <h3>クラウドに自動バックアップ</h3>
+        <p>アカウントを作ると、記録を自動でクラウドに保存。機種変更のときも安心です（無料）。</p>
+      </article>
+      <article class="feature">
+        <h3>データの書き出し</h3>
+        <p>記録は CSV・JSON で書き出せます。自分のデータは、いつでも自分のものです。</p>
+      </article>
+      <article class="feature">
+        <h3>kg・lbs と日英2か国語</h3>
+        <p>重量は kg と lbs を切り替えでき、日本語と英語に対応しています。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <img src="icon.png" alt="RepArc のアイコン">
+    <h2><span class="phrase">次の試合に向けて、</span><span class="phrase">記録を始めよう。</span></h2>
+    <span class="store-button" aria-disabled="true">App Store で近日公開</span>
+  </section>
+
 </main>
+
+<footer class="lp-footer">
+  <ul>
+    <li><a href="support/">サポート・お問い合わせ</a></li>
+    <li><a href="privacy/">プライバシーポリシー</a></li>
+  </ul>
+  <p>© 2026 中山弘太</p>
+</footer>
+
 </body>
 </html>
